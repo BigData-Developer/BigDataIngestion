@@ -21,6 +21,8 @@ Designed and implemented an automated Big Data ingestion pipeline in Databricks 
 - **Dynamic path generation:** File paths created dynamically by database, table, and date.
 - **Robust Logging:** Custom log collection with centralized inserts.
 - **Format-aware Writing:** Writes to Delta for high-volume tables, Parquet for specific business domains.
+- **Failure Handling & Alerts:** Email alerts are triggered when any table fails during sequential data write; the process continues for other tables while notifying about failures. Additional alerts are sent when data exceeds 50 million records and no watermark is defined for the corresponding table.
+
 
 ---
 
